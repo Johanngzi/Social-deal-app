@@ -1,0 +1,74 @@
+<div class="container custom-container">
+  <div class="dropdown">
+    <button class="btn btn-secondary toggle custom-css-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <span style="display: flex; flex-direction: row;   align-items: center;">
+          <i class="flags nl-flag" style="background-image: url(https://images.socialdeal.nl/img/flags/nl-nl.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          display: inline-block;
+          width: 24px; /* Increased width */
+          height: 20px; /* Increased height */
+          vertical-align: middle;
+          margin-right: 20px; /* A"></i>
+          <span style="">Tilburg</span>
+      </span>
+  </button>
+      <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+  </div>
+  <div class="col-sm-4">
+      <div class="text-center" id="countdown">
+          <div class="countdown countdown-to-new-deals" data-text="tot de nieuwe Social Deals" data-complete-text="" data-complete-refresh="true">
+              <span>13:11:16</span>
+              <div class="countdown-text">tot de nieuwe Social Deals</div>
+          </div>
+      </div>
+  </div>
+  <div class="col-sm-4">
+      <div class="call-now">
+          <div class="box-info">
+              <span>
+                  <a href="tel:+310882050505">
+                      <div class="phone can-select">
+                          <i class="fas fa-phone-alt"></i> 088 - 205 05 05
+                      </div>
+              </span>
+              <div class="open">Bereikbaar tot 23:00 uur</div>
+              </a>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- <script>
+  function updateCountdown() {
+      const countdownElement = document.querySelector('.countdown span');
+      const targetTime = new Date();
+      targetTime.setHours(23, 0, 0, 0);
+
+      const now = new Date();
+      let timeRemaining = targetTime - now;
+
+      if (timeRemaining <= 0) {
+          countdownElement.textContent = '00:00:00';
+          clearInterval(countdownInterval);
+      } else {
+          const hours = Math.floor(timeRemaining / (1000 * 60 * 60));
+          const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+          const formattedHours = String(hours).padStart(2, '0');
+          const formattedMinutes = String(minutes).padStart(2, '0');
+          const formattedSeconds = String(seconds).padStart(2, '0');
+
+          countdownElement.textContent = `${formattedHours}:${formattedMinutes}:${formattedSeconds}`; // Corrected line
+      }
+  }
+
+  updateCountdown();
+  const countdownInterval = setInterval(updateCountdown, 1000);
+</script> -->

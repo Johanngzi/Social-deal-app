@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Social Deal</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="app/css/styles.css">
+
+    <!-- Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Gogle Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=deceased,tune" />
+
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <div id="navbar-container"></div>
+
+    <!-- Dropdown -->
+    <div id="dropdown-container"></div>
+
+    <!-- Main Content -->
+    <div class="container">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active deals-tab-color" id="deals-tab" data-bs-toggle="tab" href="#deals" role="tab" aria-controls="deals" aria-selected="true">
+            <div class="title star"  style="color: rgb(0, 0, 0)">
+              <i class="fa-solid fa-star" style="color: #00345d; font-size: 20px; margin-bottom: 10px;" data-default="#00345d" data-active="#0081e9"></i>
+              Populair
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link favorieten-tab-color" id="favorieten-tab" data-bs-toggle="tab" href="#favorites" role="tab" aria-controls="favorites" aria-selected="false">
+              <div class="title favorites" style="color: rgb(0, 52, 93);" data-default="#00345D" data-active="#0081E9">
+                  <i class="fa-solid fa-heart" style="color: rgb(0, 52, 93); font-size: 20px; margin-bottom: 10px;" data-default="#00345D" data-active="#0081E9"></i>
+                  Favorieten
+              </div>
+          </a>
+      </li>
+        <li class="nav-item">
+          <a class="nav-link eten-drinken-tab-color" id="Eten & Drinken-tab" data-bs-toggle="tab" href="#nearby" role="tab" aria-controls="nearby" aria-selected="false">
+            <div class="title food" style="color: rgb(0, 52, 93); white-space: nowrap;" data-default="#00345d" data-active="#00aeea">
+            <i class="fa-solid fa-utensils" style="color: rgb(0, 52, 93); font-size: 20px; margin-bottom: 10px;" data-default="#00345d" data-active="#00aeea"></i>
+              Eten & Drinken
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link uitjes-tab-color" id="uitjes-tab" data-bs-toggle="tab" href="#nearby" role="tab" aria-controls="nearby" aria-selected="false">
+            <div class="title event" style="color: rgb(0, 52, 93);" data-default="#00345D" data-active="#2AC9A1">
+              <i class="fa-solid fa-ticket fa-rotate-by" style="--fa-rotate-angle: 135deg; color: rgb(0, 52, 93); font-size: 20px; margin-bottom: 10px;" data-default="#00345D" data-active="#BF20C4"></i>
+              Uitjes
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link wellness-beauty-tab-color" id="wellness & Beauty-tab" data-bs-toggle="tab" href="#nearby" role="tab" aria-controls="nearby" aria-selected="false">
+            <div class="title unwind" style="color: rgb(0, 52, 93);" data-default="#00345D" data-active="#BF20C4">
+              <i class="fa-solid fa-spa" style="color: rgb(0, 52, 93); font-size: 20px; margin-bottom: 10px; padding-top: 13px;" data-default="#00345D" data-active="#BF20C4"></i>
+              Wellness<br>& Beauty
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link overnachten-tab-color" id="Overnachten-tab" data-bs-toggle="tab" href="#nearby" role="tab" aria-controls="nearby" aria-selected="false">
+            <div class="title stay" style="color: rgb(0, 52, 93);" data-default="#00345D" data-active="#6C29CC">
+              <i class="fa-solid fa-bed" style="color: rgb(0, 52, 93); font-size: 20px; margin-bottom: 10px;" data-default="#00345D" data-active="#6C29CC"></i>
+              Overnachten
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link excellent-tab-color" id="Excellent-tab" data-bs-toggle="tab" href="#nearby" role="tab" aria-controls="nearby" aria-selected="false">
+            <div class="title premium" style="color: rgb(0, 52, 93);" data-default="#00345D" data-active="#6C29CC">
+              <i class="fa-solid fa-fan" style="color: rgb(0, 52, 93); font-size: 20px; margin-bottom: 10px;" data-default="#00345D" data-active="#6C29CC"></i>
+              Excellent
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link dierentuin-weken-tab-color" id=" Dierentuin-weken-tab" data-bs-toggle="tab" href="#nearby" role="tab" aria-controls="nearby" aria-selected="false">
+            <div class="title spring" style="color: rgb(0, 52, 93);" data-default="#00345d" data-active="#edb154">
+              <span class="material-symbols-outlined" style="color: rgb(0, 52, 93); font-size: 20px; margin-bottom: 10px;" data-default="#00345D" data-active="#BF20C4">
+                deceased
+                </span>
+              Lente
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link speciaalzaken-autos-tab-color" id="Speciaalzaken & Auto's-tab" data-bs-toggle="tab" href="#nearby" role="tab" aria-controls="nearby" aria-selected="false">
+            <div class="title special" style="color: rgb(0, 52, 93); padding-top: 13px;" data-default="#00345d" data-active="#edb154">
+              <i class="fa-solid fa-shop" style="color: rgb(0, 52, 93); font-size: 20px; margin-bottom: 10px;" data-default="#00345D" data-active="#6C29CC"></i>
+              Speciaalzaken<br>& Auto's
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link sport-tab-color" id="Sport-tab" data-bs-toggle="tab" href="#nearby" role="tab" aria-controls="nearby" aria-selected="false">
+            <div class="title exercise" style="color: rgb(0, 52, 93);" data-default="#00345d" data-active="#edb154">
+              <i class="fa-solid fa-person-swimming fa-flip-horizontal" style="color: rgb(0, 52, 93); font-size: 20px; margin-bottom: 10px;" data-default="#00345D" data-active="#BF20C4"></i>
+              Sport
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cursussen-workshops-tab-color" id=" Cursussen & Workshops-tab" data-bs-toggle="tab" href="#nearby" role="tab" aria-controls="nearby" aria-selected="false">
+            <div class="title courses" style="color: rgb(0, 52, 93);" data-default="#00345d" data-active="#edb154">
+              <i class="fa-solid fa-book-open-reader" style="color: rgb(0, 52, 93); font-size: 20px; margin-bottom: 10px; padding-top: 13px;" data-default="#00345D" data-active="#6C29CC"></i>
+              Cursussen<br>& Workshops
+            </div>
+          </a>
+        </li>
+      </ul>
+        <!-- Filter -->
+        <div class="d-flex justify-content-end">
+          <button type="button" class="btn btn-outline-secondary" style="display: flex; margin-top:8px; padding: 7px 15px;" data-bs-toggle="modal" data-bs-target="#filterModal">
+            <span class="material-symbols-outlined" style="color: #00345d;">
+              tune
+            </span>
+            <span style="color: #00345d; font-family: Roboto, Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; margin-left: 8px;">Filters
+            </span>
+          </button>
+        </div>
+       <!-- Searchform -->
+      <div id="form-container"></div>
+
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="deals" role="tabpanel" aria-labelledby="deals-tab">
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <a href="details.html" class="card-link">
+                <!-- Big card 1 -->
+                  <div class="card">
+                    <div class="image-conainer">
+                     <img src="/App/images/eerstekaart.jpg" class="card-img-top zoomable-image" alt="games">
+                     <div class="event-container-bigger-card">
+                      <div class="hexagon-bigger-card">
+                        <i class="fa-solid fa-ticket fa-rotate-by" style="--fa-rotate-angle: 135deg; font-size: 25px;"></i>  </div>
+                    </div>
+                    </div>
+                  </div>
+                     <div class="card-body">
+                       <h5 class="card-title">1,5 uur onbeperkt gamen bij HighScore Waalwijk</h5>
+                      </div>
+                      <div class="company" style="display: flex; justify-content: space-between;">
+                        <p class="card-text">HighScore Waalwijk<br>Waalwijk (10 km)</p>
+                        <div class="text-right review-color">
+                          <span class="text" style="color: #FFD43B; font-family: Roboto, sans-serif; font-size: 16px;">9.4</span>
+                          <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+                          <span class="review-label hidden-xs">
+                          </span>
+                        </div>
+                      </div>
+                      <div class="stats-conainer" style="display: flex; justify-content: space-between; ">
+                        <p class="sold-card-text">Verkocht: 150</p>
+                        <div class="price-col pull-right" style="display: flex; align-items: baseline;">
+                          <span class="old-price pr-1 pl-2" style="text-decoration: line-through; color: #7c7c7c; font-size: 16px; padding-right: 4px;">€45,80</span>
+                          <span class="price" style="color: #40bf4b; font-size: 24px;">€25 <a class="sub" style="color: #40bf4b; font-size: 16px"> ,95</a></span>
+                        </div>
+                      </div>
+
+              </a>
+            </div>
+            <div class="col">
+                <!-- Big card 2 -->
+              <div class="card">
+                <div class="image-conainer">
+                <img src="/App/images/tweedekaart.jpg" class="card-img-top zoomable-image" alt="...">
+                <div class="utensil-container">
+                  <div class="hexagon">
+                    <i class="fas fa-utensils"></i>  </div>
+                </div>
+              </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Sushibox (26 stuks) + mini-loempia's voor afhaal bij Je Kitchen</h5>
+              </div>
+              <div class="company" style="display: flex; justify-content: space-between;">
+                <p class="card-text">HighScore Waalwijk<br>Waalwijk (10 km)</p>
+                <div class="text-right review-color">
+                  <span class="text" style="color: #FFD43B; font-family: Roboto, sans-serif; font-size: 16px;">8.5</span>
+                  <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+                  <span class="review-label hidden-xs">
+                  </span>
+                </div>
+              </div>
+              <div class="stats-conainer" style="display: flex; justify-content: space-between;">
+                <p class="sold-card-text">Verkocht: 6</p>
+                <div class="price-col pull-right" style="display: flex; align-items: baseline;">
+                  <span class="old-price pr-1 pl-2" style="text-decoration: line-through; color: #7c7c7c; font-size: 16px; padding-right: 4px;">€45,80 </span>
+                  <span class="price" style="color: #40bf4b; font-size: 24px;">€19<a class="sub" style="color: #40bf4b; font-size: 16px;">,75</a></span>
+                </div>
+              </div>
+            </div>
+         </div>
+
+          <div class="row row-cols-1 row-cols-sm-3 g-5">
+            <div class="col">
+              <!-- <a href="details.html" class="card-link"> -->
+                  <!-- Medium card 1/ card 3 -->
+              <div class="card">
+                <img src="/App/images/eerstekaart.jpg" class="card-img-top-games zoomable-image" alt="games">
+                <div class="event-container-medium-card">
+                  <div class="hexagon-medium-card">
+                    <i class="fa-solid fa-ticket fa-rotate-by" style="--fa-rotate-angle: 135deg; font-size: 15px;"></i>  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">1,5 uur onbeperkt gamen bij HighScore Waalwijk</h5>
+              </div>
+              <div class="company" style="display: flex; justify-content: space-between;">
+                <p class="card-text">HighScore Waalwijk<br>Waalwijk (10 km)</p>
+                <div class="text-right review-color">
+                  <span class="text" style="color: #FFD43B; font-family: Roboto, sans-serif; font-size: 16px;">9.6</span>
+                  <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+                  <span class="review-label hidden-xs">
+                  </span>
+                </div>
+              </div>
+              <div class="stats-conainer" style="display: flex; justify-content: space-between; line-height: 24px;">
+                <p class="sold-card-text">Verkocht: 450</p>
+                <div class="price-col pull-right" style="display: flex; align-items: baseline;">
+                  <span class="old-price pr-1 pl-2" style="text-decoration: line-through; color: #7c7c7c; font-size: 16px; padding-right: 4px;">€45,80</span>
+                  <span class="price" style="color: #40bf4b; font-size: 24px;">€27<a class="sub" style="color: #40bf4b; font-size: 16px;">,95</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <!-- Medium card 2/card 4 -->
+              <div class="card">
+                <img src="/App/images/tweedekaart.jpg" class="card-img-top zoomable-image" alt="...">
+                <div class="utencil-container-medium-card">
+                  <div class="hexagon-medium-card-utencil">
+                    <i class="fas fa-utensils"></i> </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Sushibox (26 stuks) + mini-loempia's voor afhaal bij Je Kitchen</h5>
+              </div>
+              <div class="company" style="display: flex; justify-content: space-between;">
+                <p class="card-text">HighScore Waalwijk<br>Waalwijk (10 km)</p>
+                <div class="text-right review-color">
+                  <span class="text" style="color: #FFD43B; font-family: Roboto, sans-serif; font-size: 16px;">9.1</span>
+                  <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+                  <span class="review-label hidden-xs">
+                  </span>
+                </div>
+              </div>
+              <div class="stats-conainer" style="display: flex; justify-content: space-between; line-height: 24px;">
+                <p class="sold-card-text">Verkocht: 640</p>
+                <div class="price-col pull-right" style="align-items: flex-end;">
+                  <span class="old-price pr-1 pl-2" style="text-decoration: line-through; color: #7c7c7c; font-size: 16px; padding-right: 4px;">€45,80</span>
+                  <span class="price" style="color: #40bf4b; font-size: 24px;">€32<a class="sub" style="color: #40bf4b; font-size: 16px;">,95</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <!-- Medium card 3/5 card  -->
+              <div class="card">
+                <img src="/App/images/derdekaart.jpg" class="card-img-top zoomable-image" alt="...">
+                <div class="event-container-medium-card">
+                  <div class="hexagon-medium-card">
+                    <i class="fa-solid fa-ticket fa-rotate-by" style="--fa-rotate-angle: 135deg; font-size: 15px;"></i>  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Entree Safaripark Beekse Bergen</h5>
+              </div>
+              <div class="company" style="display: flex; justify-content: space-between;">
+                <p class="card-text">HighScore Waalwijk<br>Waalwijk (10 km)</p>
+                <div class="text-right review-color">
+                  <span class="text" style="color: #FFD43B; font-family: Roboto, sans-serif; font-size: 16px;">8.9</span>
+                  <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+                  <span class="review-label hidden-xs">
+                  </span>
+                </div>
+              </div>
+              <div class="stats-conainer" style="display: flex; justify-content: space-between; line-height: 24px;">
+                <p class="sold-card-text">Verkocht: 147</p>
+                <div class="price-col pull-right" style="align-items: flex-end;">
+                  <span class="old-price pr-1 pl-2" style="text-decoration: line-through; color: #7c7c7c; font-size: 16px; padding-right: 4px;">€45,80</span>
+                  <span class="price" style="color: #40bf4b; font-size: 24px;">€35<a class="sub" style="color: #40bf4b; font-size: 16px;">,95</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3>Laatst bekeken deals</h3>
+
+          <div class="row row-cols-1 row-cols-sm-4 g-3">
+            <div class="col">
+                <!-- Small card 1/ 6 card -->
+              <div class="card">
+                <img src="/App/images/eerstekaart.jpg" class="card-img-top zoomable-image" alt="games">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">1,5 uur onbeperkt gamen bij HighScore Waalwijk</h5>
+              </div>
+              <p class="card-text">HighScore Waalwijk<br>Waalwijk (10 km)</p>
+              <div class="stats-conainer" style="display: flex; justify-content: space-between; line-height: 24px;">
+                <p class="sold-card-text">Verkocht: 45</p>
+                <div class="price-col pull-right" style="align-items: flex-end;">
+                  <span class="old-price pr-1 pl-2" style="text-decoration: line-through; color: #7c7c7c; font-size: 16px; padding-right: 4px;">€45,80</span>
+                  <span class="price" style="color: #40bf4b; font-size: 24px;">€55<a class="sub" style="color: #40bf4b; font-size: 16px;">,95</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <!-- Card 7 -->
+              <div class="card">
+                <img src="/App/images/tweedekaart.jpg" class="card-img-top zoomable-image" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Sushibox (26 stuks) + mini-loempia's voor afhaal bij Je Kitchen</h5>
+              </div>
+              <p class="card-text">HighScore Waalwijk<br>Waalwijk (10 km)</p>
+              <div class="stats-conainer" style="display: flex; justify-content: space-between; line-height: 24px;">
+                <p class="sold-card-text">Verkocht: 245</p>
+                <div class="price-col pull-right" style="align-items: flex-end;">
+                  <span class="old-price pr-1 pl-2" style="text-decoration: line-through; color: #7c7c7c; font-size: 16px; padding-right: 4px;">€45,80</span>
+                  <span class="price" style="color: #40bf4b; font-size: 24px;">€25<a class="sub" style="color: #40bf4b; font-size: 16px;">,95</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <!-- Small card 2/ 8 card -->
+              <div class="card">
+                <img src="/App/images/derdekaart.jpg" class="card-img-top zoomable-image" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Entree Safaripark Beekse Bergen</h5>
+              </div>
+              <p class="card-text">HighScore Waalwijk<br>Waalwijk (10 km)</p>
+              <div class="stats-conainer" style="display: flex; justify-content: space-between; line-height: 24px;">
+
+                <p class="sold-card-text">Verkocht: 160</p>
+                <div class="price-col pull-right" style="align-items: flex-end;">
+                  <span class="old-price pr-1 pl-2" style="text-decoration: line-through; color: #7c7c7c; font-size: 16px; padding-right: 4px;">€45,80</span>
+                  <span class="price" style="color: #40bf4b; font-size: 24px;">€45<a class="sub" style="color: #40bf4b; font-size: 16px;">,95</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="favorites" role="tabpanel" aria-labelledby="favorites-tab">
+          <p>Your favorite deals will appear here.</p>
+        </div>
+        <div class="tab-pane fade" id="nearby" role="tabpanel" aria-labelledby="nearby-tab">
+          <p>Deals near you.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+
+    <div id="navbar-container"></div>
+    <div id="form-container"></div>
+
+<script>
+    Promise.all([
+        fetch('navbar.html').then(response => response.text()),
+        fetch('searchform.html').then(response => response.text()),
+        fetch('dropdown.html').then(response => response.text())
+    ])
+    .then(data => {
+        document.getElementById('navbar-container').innerHTML = data[0];
+        document.getElementById('form-container').innerHTML = data[1];
+        document.getElementById('dropdown-container').innerHTML = data[2];
+    });
+</script>
+
+
+</body>
+</html>
