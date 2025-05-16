@@ -1,0 +1,17 @@
+.card-ribbon {
+  background: #c42324;
+  color: #fff;
+  text-align: center;
+  line-height: 24px;
+  font-weight: 500;
+  position: absolute;
+  width: 156px;
+  height: 33px;
+  right: 0; /* Change to 0 */
+  top: 20px;   /* Change to 0 */
+  z-index: 10;
+  padding: 5px 0;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, .4);
+  -webkit-transform: rotate(45deg) translateZ(0);
+  transform: rotate(45deg) translateZ(0);
+}

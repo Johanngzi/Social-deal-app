@@ -1,0 +1,41 @@
+.fa-location-dot{
+  margin-right: 14px;
+}
+
+.fa-utensils {
+  margin-right: 14px;
+}
+
+.fa-bed {
+  margin-right: 14px;
+}
+
+.fa-circle-user {
+  margin-right: 16px;
+}
+
+.favorite-icon {
+  position: absolute;
+  right: 46px;
+  height: 24px;
+  width: 24px;
+  bottom: 16px;
+  color: #FFF;
+  cursor: pointer;
+}
+
+/* pending as it is not working */
+.fa-comments:hover {
+  color: #FFF ;
+}
+/* Dutch flag Nav-bar */
+.flags.nl-flag {
+  background-image: url(https://images.socialdeal.nl/img/flags/nl-nl.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 24px; /* Increased width */
+  height: 20px; /* Increased height */
+  vertical-align: middle;
+}

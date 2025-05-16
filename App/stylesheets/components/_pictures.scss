@@ -1,0 +1,16 @@
+.zoomable-image {
+  transition: transform 0.5s ease; /* Adjusted transition */
+  object-fit: cover; /* Prevent distortion */
+}
+
+.zoomable-image:hover {
+  transform: scale(1.03); /* Reduced zoom */
+}
+
+.image-container { /* or .card depending on your HTML */
+  overflow: hidden;
+}
+
+.img-fluid {
+  border-radius: 10px;
+}

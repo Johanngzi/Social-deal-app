@@ -1,0 +1,45 @@
+/* table opening hours */
+.table-row {
+  background-color: #f9f9f9;
+  color: #333333;
+  font-family: Montserrat, sans-serif;
+  font-weight: normal;
+}
+.dayname {
+  padding: 16px 4px 16px 16px;
+  font-weight: 400
+}
+.opening-hours-time {
+  padding: 16px 16px 16px 4px;
+  text-align: right;
+
+}
+
+// -------------- Carousel Styles -------------- //
+.carousel-inner .carousel-item img {
+  border-radius: 10px; /* Adjust this value to control the roundness */
+}
+
+// -------------- read_more_toggle_button -------------- //
+.deal-read-more {
+  width: calc(100% + 64px); /* Adjust for 32px left and right padding */
+  display: block;
+  background-color: #cecece;
+  color: #FFF;
+  cursor: pointer; /* Indicate it's clickable */
+  font-weight: 500;
+  padding: 10px 0 3px;
+  overflow: hidden;
+  z-index: 40;
+  text-align: center;
+  position: relative; /* Needed for left: -32px; */
+  left: -32px; /* Adjust for 32px left padding */
+  margin-top: -8px; /* Maintain existing margin-top */
+  border-bottom-left-radius: 8px; /* Maintain existing border-radius */
+  border-bottom-right-radius: 8px; /* Maintain existing border-radius */
+}
+.hidden {
+  max-height: 0; /* Initially hide the content by setting max-height to 0 */
+  overflow: hidden; /* Prevent content from overflowing visibly */
+  transition: max-height 0.3s ease-in-out; /* Smooth transition for the reveal effect */
+}

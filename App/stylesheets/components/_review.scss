@@ -1,0 +1,29 @@
+.bubble {
+  background: #fafafa;
+  padding: 16px;
+  border-radius: 4px;
+  width: 100%;
+  margin-left: 16px;
+}
+.review-mobile-desktop {
+  margin-bottom: 16px;
+}
+.remark {
+  color: #7c7c7c;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+}
+.name {
+  font-size: 16px;
+  color: #292929;
+  font-family: Roboto, sans-serif;
+  margin-right: auto;
+}
+
+/* review button */
+.btn-secondary-review-btn:hover {
+  background-color: #0081e9; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+  border-color: #0081e9; /* Optionally change border color */
+  /* Add other hover effects as needed (e.g., box-shadow, transform) */
+}

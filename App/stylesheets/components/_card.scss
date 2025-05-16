@@ -1,0 +1,19 @@
+
+.card-title {
+  margin-top: 24px;
+}
+.card-body {
+  padding-top: 24px;
+  padding-bottom: 8px;
+}
+.card-link {
+  display: block; /* Make the entire card clickable */
+  text-decoration: none; /* Remove underline from link */
+  color: inherit; /* Inherit text color from parent */
+}
+.sold-card-text {
+  color: #00aeea;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  line-height: 24px;
+}

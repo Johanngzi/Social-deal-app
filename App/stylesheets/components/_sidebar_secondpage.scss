@@ -1,0 +1,35 @@
+.sidebar {
+  width: 100%; /* Take up the full width of the left div */
+  padding: 32px 0 0;
+}
+
+.sidebar-item {
+  padding: 15px;
+  color: #292929;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-item:last-child {
+  border-bottom: none;
+}
+
+.sidebar-item .icon {
+  margin-right: 10px;
+}
+
+.sidebar-item .arrow {
+  margin-left: auto;
+}
+
+.sidebar-item:hover {
+  background-color: #00AEEA;
+  color: #FFF;
+  border-radius: 8px;
+}
+.side-bar-icon {
+  font-size: 20px;
+  margin-right: 32px;
+  color:#7C7C7C;
+}

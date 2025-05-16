@@ -1,0 +1,97 @@
+@media only screen and (min-width: 768px) {
+  .col-sm-6>:not(.multidealcards) .hexagon {
+      bottom: -29px;
+      margin-left: -28px;
+  }
+}
+
+.hexagon {
+  position: absolute;
+  bottom: -21px;
+  left: 50%;
+  margin-left: -20px;
+  z-index: 10;
+}
+
+.hexagon {
+  position: relative;
+  width: 56px; /* Adjust size as needed */
+  height: 56px; /* Adjust size as needed */
+  background-color: #00aeea; /* Blue color */
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); /* Create hexagon shape */
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+  align-items: center;
+  color: white; /* Icon color */
+  font-size: 25px; /* Icon size */
+}
+
+
+.hexagon-bigger-card {
+  position: relative;
+  width: 56px; /* Adjust size as needed */
+  height: 56px; /* Adjust size as needed */
+  background-color: #2AC9A1; /* Blue color */
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); /* Create hexagon shape */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Icon color */
+  font-size: 28px; /* Icon size */
+}
+
+
+.hexagon-medium-card {
+  position: relative;
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  background-color: #2AC9A1; /* Blue color */
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); /* Create hexagon shape */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Icon color */
+  font-size: 32px; /* Icon size */
+}
+
+.hexagon-medium-card-utencil {
+  position: relative;
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  background-color: #00aeea;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); /* Create hexagon shape */
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+  align-items: center;
+  color: white; /* Icon color */
+  font-size: 15px; /* Icon size */
+}
+
+.utensil-container {
+  position: absolute; /* Position it relative to the card */
+  bottom: -0.5em; /* Adjust as needed */
+  left: 48.5%;
+  transform: translateX(-45%); /* Center horizontally */
+}
+.utencil-container-medium-card {
+  position: absolute; /* Position it relative to the card */
+  bottom: -1.2em; /* Adjust as needed */
+  left: 48.5%;
+  transform: translateX(-35%); /* Center horizontally */
+}
+
+.event-container-medium-card {
+  position: absolute; /* Position it relative to the card */
+  bottom: -1.2em; /* Adjust as needed */
+  left: 48.5%;
+  transform: translateX(-35%); /* Center horizontally */
+}
+
+.event-container-bigger-card {
+  position: absolute; /* Position it relative to the card */
+  bottom: -1.7em; /* Adjust as needed */
+  left: 48.5%;
+  transform: translateX(-31%); /* Center horizontally */
+}

@@ -1,0 +1,225 @@
+.link-text {
+  margin-left: 14px;
+}
+
+.link-text {
+  margin-left: 14px;
+}
+
+.nav-item-tab{
+ display: flex;
+}
+
+.tab-icon {
+  width: 24px; /* Adjust to your tab size */
+  height: 24px; /* Adjust to your tab size */
+  position: top;
+}
+
+.nav-link div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-tabs .nav-link {
+  border: 1px solid #ccc;
+  border-radius: 4;
+  background-color: white;
+  padding: 22px 4px;
+  margin: 0px 16px 0px 0px;
+  color: #333;
+  width: 104px;
+  height: 104px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content */
+}
+
+
+.nav-tabs .nav-link.active {
+  border: 2px solid rgb(0, 129, 233);
+  background-color: white;
+  color: black;
+}
+
+/* Populair tab */
+.nav-item .nav-link:hover .fa-star,
+.nav-item .nav-link:hover .star {
+  color: rgb(0, 129, 233) !important;
+  font-weight: 600; /* Optional: Apply font-weight to text as well */
+}
+.nav-tabs .nav-link.active.favorieten-tab-color,
+.nav-tabs .nav-link.active .title .fa-star,
+.nav-tabs .nav-link.active .title.star{
+  border-color:rgb(0, 129, 233);
+  color: rgb(0, 129, 233) !important;
+  font-weight: 600;
+}
+
+/* Favorieten tab */
+.nav-item .nav-link:hover .fa-heart,
+.nav-item .nav-link:hover .favorites {
+  color: rgb(0, 129, 233) !important;
+  font-weight: 600; /* Optional: Apply font-weight to text as well */
+}
+
+.nav-tabs .nav-link.active.favorieten-tab-color,
+.nav-tabs .nav-link.active .title .fa-heart,
+.nav-tabs .nav-link.active .title.favorites{
+  border-color:rgb(0, 129, 233);
+  color: rgb(0, 129, 233) !important;
+  font-weight: 600;
+}
+
+/* Eten en drinken tab */
+.nav-item .nav-link:hover .fa-utensils,
+.nav-item .nav-link:hover .food {
+  color: rgb(0, 174, 234) !important;
+  font-weight: 600;
+}
+
+.nav-tabs .nav-link.active.eten-drinken-tab-color,
+.nav-tabs .nav-link.active .title .fa-utensils,
+.nav-tabs .nav-link.active .title.food {
+  border-color: rgb(0, 174, 234);
+  color: rgb(0, 174, 234)!important;
+  font-weight: 600;
+}
+
+/* Uitjes tab */
+.nav-item .nav-link:hover .fa-ticket,
+.nav-item .nav-link:hover .event {
+  color:rgb(42, 201, 161) !important;
+  font-weight: 600;
+}
+
+.nav-tabs .nav-link.active.uitjes-tab-color,
+.nav-tabs .nav-link.active .title .fa-ticket,
+.nav-tabs .nav-link.active .title.event {
+  border-color: rgb(42, 201, 161);
+  color:rgb(42, 201, 161) !important;
+  font-weight: 600;
+}
+
+/* Wellness tab */
+.nav-item .nav-link:hover .fa-spa,
+.nav-item .nav-link:hover .unwind {
+  color:rgb(191, 32, 196) !important;
+  font-weight: 600;
+}
+.nav-tabs .nav-link.active.wellness-beauty-tab-color,
+.nav-tabs .nav-link.active .title .fa-spa,
+.nav-tabs .nav-link.active .title.unwind {
+  border-color: rgb(191, 32, 196);
+  color:rgb(191, 32, 196) !important;
+  font-weight: 600;
+}
+
+/* Overnachten tab */
+.nav-item .nav-link:hover .fa-bed,
+.nav-item .nav-link:hover .stay {
+  color:rgb(108, 41, 204) !important;
+  font-weight: 600;
+}
+.nav-tabs .nav-link.active.overnachten-tab-color,
+.nav-tabs .nav-link.active .title .fa-bed,
+.nav-tabs .nav-link.active .title.stay{
+  border-color: rgb(108, 41, 204);
+  color:rgb(108, 41, 204) !important;
+  font-weight: 600;
+}
+
+/* Excellent tab */
+.nav-item .nav-link:hover .fa-fan,
+.nav-item .nav-link:hover .premium {
+  color:rgb(237, 177, 84)  !important;
+  font-weight: 600;
+}
+.nav-tabs .nav-link.active.excellent-tab-color,
+.nav-tabs .nav-link.active .title .fa-fan,
+.nav-tabs .nav-link.active .title.premium{
+  border-color: rgb(237, 177, 84);
+  color:rgb(237, 177, 84)  !important;
+  font-weight: 600;
+}
+
+/* Lente tab */
+.nav-item .nav-link:hover .material-symbols-outlined,
+.nav-item .nav-link:hover .spring {
+  color:#f8c241  !important;
+  font-weight: 600;
+}
+.nav-tabs .nav-link.active.dierentuin-weken-tab-color,
+.nav-tabs .nav-link.active .title .material-symbols-outlined,
+.nav-tabs .nav-link.active .title.spring{
+  border-color: #f8c241;
+  color:#f8c241  !important;
+  font-weight: 600;
+}
+
+/* speciaalzaken tab */
+.nav-item .nav-link:hover .fa-shop,
+.nav-item .nav-link:hover .special {
+  color:rgb(245, 44, 45)  !important;
+  font-weight: 600;
+}
+.nav-tabs .nav-link.active.speciaalzaken-autos-tab-color,
+.nav-tabs .nav-link.active .title .fa-shop,
+.nav-tabs .nav-link.active .title.special {
+  border-color: rgb(245, 44, 45);
+  color:rgb(245, 44, 45)  !important;
+  font-weight: 600;
+}
+
+/* Sport tab */
+.nav-item .nav-link:hover .fa-person-swimming,
+.nav-item .nav-link:hover .exercise {
+  color:rgb(42, 62, 188)  !important;
+  font-weight: 600;
+}
+.nav-tabs .nav-link.active.sport-tab-color,
+.nav-tabs .nav-link.active .title .fa-person-swimming,
+.nav-tabs .nav-link.active .title.exercise {
+  border-color: rgb(42, 62, 188);
+  color:rgb(42, 62, 188)  !important;
+  font-weight: 600;
+}
+
+/* Cursussen tab */
+.nav-item .nav-link:hover .fa-book-open-reader,
+.nav-item .nav-link:hover .courses {
+  color:rgb(237, 150, 47)  !important;
+  font-weight: 600;
+}
+.nav-tabs .nav-link.active.cursussen-workshops-tab-color,
+.nav-tabs .nav-link.active .title .fa-book-open-reader,
+.nav-tabs .nav-link.active .title.courses {
+  border-color: rgb(237, 150, 47);
+  color:rgb(237, 150, 47)  !important;
+  font-weight: 600;
+}
+
+.nav-tabs .nav-link {
+  padding: 22px 4px;
+  font-size: 1.1rem; /* Adjust font size if needed */
+  line-height: 1.5; /* Adjust line height if needed */
+  font-size: 14px; /* Adjust font size as needed */
+  font-family: Roboto, sans-serif;
+  margin-right: 16px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.nav-link  .title {
+  font-size: 14px;
+  line-height: 16px;
+  width: 94px;
+}
+
+.nav-tabs{
+  margin-bottom: 8px;
+  border-bottom: none; /* Remove the bottom border */
+}

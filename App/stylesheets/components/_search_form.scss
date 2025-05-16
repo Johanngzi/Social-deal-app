@@ -1,0 +1,56 @@
+.custom-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+
+}
+.simple_form {
+  padding-top: 16px;
+  margin-bottom: 30px;
+}
+
+.search-form-control {
+  position: relative;
+}
+
+.search-form-control input {
+  padding: 12px 40px 12px 48px;
+  background-color: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+}
+
+.search-form-control button {
+  position: absolute;
+  top: 50%;
+  left: 10px; /* Adjusted position */
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.phone {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.call-now a {
+  font-family: Roboto, Arial, sans-serif;
+  text-align: right;
+  text-decoration: none;
+}
+
+.countdown-text {
+  font-size: 14px;
+  color: #333;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.countdown-to-new-deals {
+  color: #2378BC;
+  font-size: 16px;
+}

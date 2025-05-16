@@ -1,0 +1,36 @@
+.custom-css-btn {
+  width: 345px; /* Adjust the width as needed */
+  background-color: white;
+  height: 56px;
+  padding: 0px 18px;
+  font-size: 16px;
+  color: #292929;
+  font-weight: 500;
+  border: 2px solid #E0E0E0;
+  border-radius: 8px;
+  font-family: Roboto, Arial, sans-serif;
+  display: flex;
+}
+
+.custom-css-btn:hover {
+  background-color: white;
+  color:#333;
+  border: 2px solid #0081E9;
+}
+
+
+.toggle::after {
+  content: '';
+  position: absolute; /* Position the custom arrow */
+  top: 50%; /* Center vertically */
+  right: 28px; /* Adjust as needed */
+  transform: translateY(-50%) rotate(45deg); /* Rotate for chevron shape */
+  border-bottom: 2px solid #333; /* Adjust color and thickness */
+  border-right: 2px solid #333;
+  width: 8px; /* Adjust size */
+  height: 8px;
+}
+/* It is not applying the CSS */
+.dropdown-availability:hover {
+  background-color: none;
+}

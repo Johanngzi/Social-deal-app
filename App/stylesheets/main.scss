@@ -1,0 +1,25 @@
+// Your CSS partials
+@import 'components/avatar';  // Relative path, without the leading slash
+@import 'components/body_of_the_page';  // Relative path, without the leading slash
+@import 'components/button';  // Relative path, without the leading slash
+@import 'components/calendar';  // Relative path, without the leading slash
+@import 'components/card';  // Relative path, without the leading slash
+@import 'components/card_ribbon.scss';  // Relative path, without the leading slash
+@import 'components/dropdown';
+@import 'components/hexagon';  // Relative path, without the leading slash
+@import 'components/icons';
+@import 'components/navbar';  // Relative path, without the leading slash
+@import 'components/navbar_tab';  // Relative path, without the leading slash
+@import 'components/pictures';  // Relative path, without the leading slash
+@import 'components/price';  // Relative path, without the leading slash
+@import 'components/read_miore_toggle_button';  // Relative path, without the leading slash
+@import 'components/review';  // Relative path, without the leading slash
+@import 'components/search_form.scss';  // Relative path, without the leading slash
+@import 'components/select_your_deal';  // Relative path, without the leading slash
+@import 'components/sidebar_secondpage';
+@import 'components/unordered_list';  // Relative path, without the leading slash
+
+// Your CSS partials
+@import 'pages/details';  // Relative path, without the leading slash
+@import 'pages/home';  // Relative path, without the leading slash
+@import 'pages/background';  // Relative path, without the leading slash
